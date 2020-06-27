@@ -1,3 +1,21 @@
+<h2>Forking the correct library and resetting it to the version used by juuj:</h2>
+
+<ol>
+<li>Latest AFNetworking library (https://github.com/AFNetworking/AFNetworking.git) was forked to VooduVibe-Dev</li>
+<li>Forked library was cloned to local drive ($ git clone https://github.com/VooduVibe-Dev/AFNetworking.git)</li>
+<li>Cloned version on local drive was reset to version 0.3.10 ($ git reset 88f1305) dated 31 Mar 2016</li>
+<li>Changes were removed ($ git add && git stash)</li>
+<li>New local version (0.3.1) was pushed back to forked GitHub repository ($ git push —force)</li>
+<li>Repository was renamed to AFNetworking-v3.1.0 (https://github.com/VooduVibe-Dev/AFNetworking-v3.1.0.git)</li>
+</ol>
+
+<h2>Making the required changes to the forked library to make it compatible with juuj:</h2>
+<ol>
+<li>Local version of repository was compared to Kannan’s library (https://github.com/VooduVibe-Dev/AFNetworking.git)</li>
+<li>To ease side-by-side file comparison with Kannan’s version of the library, some of the files/folders in the root folder of the local repository were placed in a temporary folder (his library did not contain these files/folders). When the comparison was completed these files/folders were placed back where they came from. Unfortunately when the changes made to the local repository were pushed back into GitHub they showed these files/folders as new additions (which they are not).</li>
+<li>As a result, please see “Changes to Forked AFNetworking 3.1 Library” (which is a numbers file) to understand the actual changes made to the repository before it was pushed back to GitHub.</li>
+</ol>
+
 <p align="center" >
   <img src="https://raw.github.com/AFNetworking/AFNetworking/assets/afnetworking-logo.png" alt="AFNetworking" title="AFNetworking">
 </p>
