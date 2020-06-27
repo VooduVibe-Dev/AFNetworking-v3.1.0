@@ -46,8 +46,6 @@ Released on Thursday, March 31, 2016. All issues associated with this milestone 
  * Implemented by zwm in [#3294](https://github.com/AFNetworking/AFNetworking/pull/3294).
 * Fixed status code 204/205 handling
  * Implemented by Kevin Harwood in [#3292](https://github.com/AFNetworking/AFNetworking/pull/3292).
-* Fixed crash when passing nil/null for progress in UIWebView extension
- * Implemented by Kevin Harwood in [#3289](https://github.com/AFNetworking/AFNetworking/pull/3289).
 
 #### Removed
 * Removed workaround for NSJSONSerialization bug that was fixed in iOS 7
@@ -157,8 +155,6 @@ For detailed information about migrating to AFNetworking 3.0.0, please reference
  * Implemented by Kevin Harwood in [#3152](https://github.com/AFNetworking/AFNetworking/pull/3152).
 * Fixed `AFImageDownloader` stalling after numerous failures
  * Implemented by Rick Silva in [#3150](https://github.com/AFNetworking/AFNetworking/pull/3150).
-* Fixed warnings generated in UIWebView category
- * Implemented by Kevin Harwood in [#3126](https://github.com/AFNetworking/AFNetworking/pull/3126).
 
 #### Removed
 * Removed AFBase64EncodedStringFromString static function
@@ -354,7 +350,6 @@ Released on 2015-05-14. All issues associated with this milestone can be found u
 
 * Add guards for unsupported features in iOS 8 App Extensions
 
-* Add missing delegate callbacks to 	`UIWebView` category
  
 * Add test and implementation of strict default certificate validation
 
@@ -757,9 +752,6 @@ in User-Agent string (Samuel Goodwin)
 
   * Fix `-Wshorten-64-to-32` warning (Jesse Collis)
 
-  * Remove unnecessary #imports in `UIImageView` & `UIWebView` categories
-(Jesse Collis)
-
   * Fix call to `CFStringTransform()` by checking return value before setting
 as `User-Agent` (Kevin Cassidy Jr)
 
@@ -782,9 +774,6 @@ the server should be trusted. (Oliver Letterer, Eric Allam)
 
   * Add default initializer to make `AFHTTPRequestOperationManager`
 consistent with `AFHTTPSessionManager` (Marcelo Fabri)
-
-  * Add documentation about `UIWebView` category and implementing
-`UIWebViewDelegate` (Mattt Thompson)
 
   * Add missing `NSCoding` and `NSCopying` implementations for
 `AFJSONRequestSerializer` (Mattt Thompson)
@@ -952,7 +941,6 @@ Thompson)
 
   * Fix typo in comments (@palringo)
 
-  * Fix UIWebView category to use supplied success callback (Mattt Thompson)
 
   * Fix various static analyzer warnings (Kyle Fuller, Jesse Collis, Mattt
 Thompson)
@@ -1026,10 +1014,6 @@ calls (Mindaugas Vaičiūnas)
   * Remove empty, unused `else` branch (Luka Bratos)
 
 ## [2.0.2](https://github.com/AFNetworking/AFNetworking/releases/tag/2.0.2) (2013-10-29)
-
-  * Add `UIWebView
- -loadRequest:MIMEType:textEncodingName:progress:success:failure:` (Mattt
- Thompson)
 
   * Fix iOS 6 compatibility in `AFHTTPSessionManager` &
  `UIProgressView+AFNetworking` (Olivier Halligon, Mattt Thompson)

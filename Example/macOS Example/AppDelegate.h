@@ -1,4 +1,4 @@
-// UIKit+AFNetworking.h
+// AppDelegate.h
 //
 // Copyright (c) 2011–2016 Alamofire Software Foundation ( http://alamofire.org/ )
 //
@@ -20,22 +20,12 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-#if TARGET_OS_IOS || TARGET_OS_TV
-#import <UIKit/UIKit.h>
+#import <Cocoa/Cocoa.h>
 
-#ifndef _UIKIT_AFNETWORKING_
-    #define _UIKIT_AFNETWORKING_
+@interface AppDelegate : NSObject <NSApplicationDelegate>
 
-#if TARGET_OS_IOS
-    #import "AFAutoPurgingImageCache.h"
-    #import "AFImageDownloader.h"
-    #import "AFNetworkActivityIndicatorManager.h"
-    #import "UIRefreshControl+AFNetworking.h"
-#endif
+@property (strong) IBOutlet NSWindow *window;
+@property (strong) IBOutlet NSTableView *tableView;
+@property (strong) IBOutlet NSArrayController *postsArrayController;
 
-    #import "UIActivityIndicatorView+AFNetworking.h"
-    #import "UIButton+AFNetworking.h"
-    #import "UIImageView+AFNetworking.h"
-    #import "UIProgressView+AFNetworking.h"
-#endif /* _UIKIT_AFNETWORKING_ */
-#endif
+@end
