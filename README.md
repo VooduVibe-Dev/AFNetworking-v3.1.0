@@ -14,6 +14,17 @@
 <li>Local version of repository was compared to Kannan’s library (https://github.com/VooduVibe-Dev/AFNetworking.git)</li>
 <li>To ease side-by-side file comparison with Kannan’s version of the library, some of the files/folders in the root folder of the local repository were placed in a temporary folder (his library did not contain these files/folders). When the comparison was completed these files/folders were placed back where they came from. Unfortunately when the changes made to the local repository were pushed back into GitHub they showed these files/folders as new additions (which they are not).</li>
 <li>As a result, please see “Changes to Forked AFNetworking 3.1 Library” (which is a numbers file) to understand the actual changes made to the repository before it was pushed back to GitHub.</li>
+
+<li>The changes affected on the forked were made to replace AFNerworking's dependence on UIWebView (deprecated) with WKWebView</li>
+</ol>
+
+<h2>Pushing Amendments to 3.1.0 to GitHub Repository</h2>
+
+<li>Pushed by implementing the following git commands:</li>
+<ol>
+<li>$ git add .</li>
+<li>$ git commit -m "Replace UIWebView dependence (app store issue) with WKWebView, replace MPMoviePlayerController dependence (iOS 13 deprecated) and replace with AVKit, rename didSelectContact reserved method to didSelectAContact, and apply cutomizations required for juuj"</li>
+<li>$ git push origin master</li>
 </ol>
 
 <p align="center" >
