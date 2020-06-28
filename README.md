@@ -20,7 +20,7 @@
 
 <h2>Pushing Amendments to 3.1.0 to GitHub Repository</h2>
 
-<li>Pushed by implementing the following git commands:</li>
+Pushed by implementing the following git commands:
 <ol>
 <li>$ git add .</li>
 <li>$ git commit -m "Replace UIWebView dependence (app store issue) with WKWebView, replace MPMoviePlayerController dependence (iOS 13 deprecated) and replace with AVKit, rename didSelectContact reserved method to didSelectAContact, and apply cutomizations required for juuj"</li>
